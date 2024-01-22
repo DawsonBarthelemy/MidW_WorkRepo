@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b4t5wxnm3bcuy"]
+
+[node name="Mouse" type="Polygon2D"]
+position = Vector2(-93, -36)
+scale = Vector2(1.4489, 1.1228)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(64.1866, 32.0626, 64.1866, 128.251, 87.9173, 113.761, 100.739, 148.624, 130.044, 143.119, 113.56, 104.587, 139.202, 95.4129)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(16.1478, 14.7059)
+scale = Vector2(0.817059, 0.817059)
+color = Color(0.996078, 1, 1, 1)
+polygon = PackedVector2Array(64, 32, 64, 128, 88, 112, 103.526, 151.576, 129.407, 145.592, 112, 104, 136, 96, 115.306, 77.6051)

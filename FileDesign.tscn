@@ -1,0 +1,154 @@
+[gd_scene load_steps=3 format=3 uid="uid://yrwxq56dvfxy"]
+
+[ext_resource type="Script" path="res://FileDesign.cs" id="1_j5hm8"]
+
+[sub_resource type="Theme" id="Theme_b3p77"]
+
+[node name="Sprite" type="Sprite2D"]
+position = Vector2(128, 64)
+script = ExtResource("1_j5hm8")
+
+[node name="FileClosed" type="Control" parent="."]
+layout_mode = 3
+anchor_right = 312.0
+anchor_bottom = 168.0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect6" type="ColorRect" parent="FileClosed"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 160.0
+offset_bottom = 56.0
+color = Color(0.729412, 0.568627, 0.160784, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="FileClosed"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 48.0
+offset_right = 290.0
+offset_bottom = 181.0
+rotation = -0.158372
+color = Color(0.72549, 0.72549, 0.72549, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="FileClosed/ColorRect4"]
+layout_mode = 0
+offset_left = 7.96042
+offset_top = 0.794829
+offset_right = 217.96
+offset_bottom = 133.795
+rotation = 0.0274009
+color = Color(0.662745, 0.662745, 0.662745, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="FileClosed/ColorRect4/ColorRect4"]
+layout_mode = 0
+offset_left = 7.97921
+offset_top = 0.576438
+offset_right = 217.979
+offset_bottom = 133.576
+rotation = 0.0274009
+color = Color(0.72549, 0.72549, 0.72549, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="FileClosed"]
+layout_mode = 0
+offset_top = 48.0
+offset_right = 352.0
+offset_bottom = 208.0
+color = Color(0.729412, 0.568627, 0.160784, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="FileClosed"]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 352.0
+offset_bottom = 200.0
+color = Color(0.709804, 0.619608, 0.356863, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="FileOpen" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 384.0
+offset_bottom = 208.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="FileOpen"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 45.6011
+offset_right = 322.0
+offset_bottom = 178.601
+rotation = -0.337823
+color = Color(0.72549, 0.72549, 0.72549, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="FileOpen/ColorRect4"]
+layout_mode = 0
+offset_left = 7.96042
+offset_top = 0.794829
+offset_right = 217.96
+offset_bottom = 133.795
+rotation = 0.0274009
+color = Color(0.662745, 0.662745, 0.662745, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="FileOpen/ColorRect4/ColorRect4"]
+layout_mode = 0
+offset_left = 7.97921
+offset_top = 0.576438
+offset_right = 217.979
+offset_bottom = 133.576
+rotation = 0.0274009
+color = Color(0.72549, 0.72549, 0.72549, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="FileOpen"]
+layout_mode = 0
+offset_top = 48.0
+offset_right = 352.0
+offset_bottom = 208.0
+color = Color(0.729412, 0.568627, 0.160784, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect6" type="ColorRect" parent="FileOpen"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 160.0
+offset_bottom = 54.0
+color = Color(0.729412, 0.568627, 0.160784, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D" type="Polygon2D" parent="FileOpen"]
+position = Vector2(-280, -402.399)
+color = Color(0.729412, 0.647059, 0.403922, 1)
+polygon = PackedVector2Array(280, 602.399, 312, 442.399, 664, 442.399, 632, 602.399)
+
+[node name="FileDimensions" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 352.0
+offset_bottom = 208.0
+metadata/_edit_use_anchors_ = true
+
+[node name="FileTitle" type="RichTextLabel" parent="."]
+anchors_preset = -1
+anchor_right = 32.0
+offset_left = 32.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 40.0
+theme = SubResource("Theme_b3p77")
+theme_override_font_sizes/normal_font_size = 23
+text = "SETTINGS"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="mouse_entered" from="FileDimensions" to="." method="_on_hovering"]
+[connection signal="mouse_exited" from="FileDimensions" to="." method="_on_exit"]

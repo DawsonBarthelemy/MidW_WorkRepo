@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://deopjjwqb4wph"]
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.0352941, 0.101961, 0.133333, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 1120.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+layout_mode = 0
+offset_right = 992.0
+offset_bottom = 32.0
+text = "C://Doorway//Users//Player/PersonellFiles//MainMenu"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 100.0
+offset_right = 336.0
+offset_bottom = 308.0
+text = "Hey Dawson. You probably are way too tired to think about what you are doing, so heres a little tid bit ;>
+
+TODO:
+- You will add functiantily to the windows bar text
+- the bar on the left will have some files
+-Import the MainMenu section into this to add actual functionality
+-Finish the clicking thinggy
+-Change the file opening operations from the control node to the texturebutton
+What you did:
+-Use texture buttons for the functionality
+-You cleaned up your code (Good job buddy!) Its still unreadable, but slightly less so
+I think thats it. I guess you should probably fix some of your 'good old good enough' code and make it work better. Right now it kinda sucks
+Best wishes to ya buddy"
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 32.0
+offset_top = 20.0
+offset_right = 116.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
